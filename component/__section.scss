@@ -1,0 +1,41 @@
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+
+  // responsive
+  @media (max-width: 1068px) {
+    padding: 100px 40px;
+  }
+
+  .home-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 110%;
+
+    // responsive
+    @media (max-width: 1068px) {
+      display: none;
+    }
+  }
+
+  .home-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: $primary-color;
+    color: #fff;
+    margin: 20px 0;
+    padding: 10px 30px;
+
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
+}
