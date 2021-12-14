@@ -228,6 +228,13 @@ section.flex-row {
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+  .services .service {
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .services .service h2 {
   font-weight: 500;
   margin-top: 20px;
@@ -298,5 +305,106 @@ section.flex-row {
   color: #fff;
   border: 1px solid #fff;
   padding: 5px 15px;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__form {
+  position: relative;
+  background: #f9f9f9;
+  width: calc(100% - 400px);
+  padding: 60px 40px 20px;
+}
+
+.contact__form form .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__form form .row input,
+.contact__form form .row textarea {
+  position: relative;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #111;
+  font-size: 16px;
+  margin: 10px 0;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+.contact__form form .row textarea {
+  height: 150px;
+}
+
+.contact__form form .row input[type="submit"] {
+  background: #1b206e;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contact__form form .row .input-50 {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.contact__form form .row .input-100 {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.contact__info {
+  width: 350px;
+  background: #f9f9f9;
+  padding: 60px 40px 20px;
+}
+
+.contact__info .info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.contact__info .info-box .contact-icon {
+  width: 20px;
+  margin-right: 40px;
+}
+
+.contact__info .info-box .details {
+  text-transform: capitalize;
+}
+
+.contact__info .info-box .details h4 {
+  color: #1b206e;
+}
+
+.contact__info .info-box .details a {
+  text-transform: lowercase;
 }
 /*# sourceMappingURL=style.css.map */
